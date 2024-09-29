@@ -3,59 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apple Joy</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Apple Joy - Home</title>
+    <style>
+        /* Embedded CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333333;
+        }
+
+        header {
+            background-color: #2E8B57; /* Green apple-like color */
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .hero {
+            background-color: #f2f2f2;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            color: #2E8B57;
+        }
+
+        .products {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .product-list {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .product {
+            background-color: #FFD700; /* Gold for product cards */
+            padding: 20px;
+            border-radius: 10px;
+            width: 150px;
+        }
+
+        footer {
+            background-color: #2E8B57;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .contact label {
+            margin-top: 10px;
+        }
+
+        .contact input {
+            padding: 10px;
+            margin-top: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .contact button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #2E8B57;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Apple Joy</h1>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Produk</a></li>
-                <li><a href="#">Kemasan</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#kemasan">Kemasan</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="products">
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <h2>Nikmati kesegaran apel hijau dalam setiap gigitan Apple Joy</h2>
+            <p>cemilan sehat dan praktis, cocok untuk hidup sehat anda</p>
+        </section>
+
+        <!-- Produk Section -->
+        <section id="produk" class="products">
             <h2>Produk</h2>
             <div class="product-list">
-                <div class="product-item">
+                <div class="product">
                     <h3>Coklat</h3>
                 </div>
-                <div class="product-item">
+                <div class="product">
                     <h3>Cinnamon Sugar</h3>
                 </div>
-                <div class="product-item">
-                    <h3>Vanila</h3>
+                <div class="product">
+                    <h3>Vanilla</h3>
                 </div>
-                <div class="product-item">
+                <div class="product">
                     <h3>Original</h3>
                 </div>
             </div>
         </section>
 
-        <section class="order">
-            <h2>Pesan</h2>
-            <p>“Nikmati kesegaran apel hijau dalam setiap gigitan Apple Joy! Cemilan sehat dan praktis, cocok untuk hidup sehat anda.”</p>
-            <form action="#" method="post">
+        <!-- Kemasan Section -->
+        <section id="kemasan" class="hero">
+            <h2>Kemasan</h2>
+            <p>Informasi mengenai kemasan produk Apple Joy.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form>
                 <label for="name">Nama:</label>
                 <input type="text" id="name" name="name" required>
-                
+
                 <label for="phone">No. Telepon:</label>
                 <input type="tel" id="phone" name="phone" required>
-                
+
                 <button type="submit">PESAN</button>
             </form>
         </section>
     </main>
 
     <footer>
+        <p>Apple Joy © 2024 | Follow us on Instagram: @Applejoy_M</p>
         <p>Contact: 081234567890</p>
-        <p>Follow us: <a href="#">Applejoy_M</a></p>
     </footer>
 </body>
 </html>
