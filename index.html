@@ -65,7 +65,14 @@
             background-color: #FFD700; /* Gold for product cards */
             padding: 20px;
             border-radius: 10px;
-            width: 150px;
+            width: 200px;
+            text-align: center;
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
         }
 
         footer {
@@ -75,35 +82,6 @@
             padding: 10px;
             position: fixed;
             bottom: 0;
-            width: 100%;
-        }
-
-        .contact form {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            max-width: 300px;
-            margin: 0 auto;
-        }
-
-        .contact label {
-            margin-top: 10px;
-        }
-
-        .contact input {
-            padding: 10px;
-            margin-top: 5px;
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        .contact button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #2E8B57;
-            color: white;
-            border: none;
-            cursor: pointer;
             width: 100%;
         }
     </style>
@@ -128,20 +106,24 @@
             <p>cemilan sehat dan praktis, cocok untuk hidup sehat anda</p>
         </section>
 
-        <!-- Produk Section -->
+        <!-- Produk Section with Images -->
         <section id="produk" class="products">
             <h2>Produk</h2>
             <div class="product-list">
                 <div class="product">
-                    <h3>Coklat</h3>
-                </div>
-                <div class="product">
+                    <img src="cinnamon_sugar.jpeg" alt="Cinnamon Sugar">
                     <h3>Cinnamon Sugar</h3>
                 </div>
                 <div class="product">
+                    <img src="coklat.jpeg" alt="Coklat">
+                    <h3>Coklat</h3>
+                </div>
+                <div class="product">
+                    <img src="vanilla.jpeg" alt="Vanilla">
                     <h3>Vanilla</h3>
                 </div>
                 <div class="product">
+                    <img src="original.jpeg" alt="Original">
                     <h3>Original</h3>
                 </div>
             </div>
